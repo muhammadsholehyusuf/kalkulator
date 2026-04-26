@@ -1,26 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=./kalkulator.html">
-    <title>Kalkulator Keren</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Aplikasi</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 50px 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        a {
-            color: #FFD700;
-            font-size: 20px;
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 350px;
+        }
+        .menu a {
+            display: block;
+            padding: 18px 30px;
+            background: #1e1e1e;
+            color: white;
+            font-size: 1.2rem;
             text-decoration: none;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            font-weight: 600;
+        }
+        .menu a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+        }
+        .menu a.kalkulator {
+            border-left: 5px solid #7d5fff;
+        }
+        .menu a.game {
+            border-left: 5px solid #26de81;
+        }
+        .emoji {
+            font-size: 1.4rem;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
-    <h1>🔄 Membuka Kalkulator...</h1>
-    <p>Jika tidak terbuka otomatis, <a href="./kalkulator.html">klik di sini</a></p>
+    <h1>🎯 Menu Aplikasi</h1>
+    <div class="menu">
+        <a href="./kalkulator.html" class="kalkulator">
+            <span class="emoji">🧮</span> Kalkulator Keren
+        </a>
+        <a href="./ular.html" class="game">
+            <span class="emoji">🐍</span> Game Ular
+        </a>
+    </div>
 </body>
 </html>

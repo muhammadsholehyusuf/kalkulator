@@ -1,6 +1,7 @@
 const CACHE_NAME = 'kalkulator-v1';
 const urlsToCache = [
   './kalkulator.html',
+  './ular.html',
   './manifest.json'
 ];
 
