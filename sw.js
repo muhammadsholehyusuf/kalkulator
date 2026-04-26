@@ -2,6 +2,9 @@ const CACHE_NAME = 'kalkulator-v1';
 const urlsToCache = [
   './kalkulator.html',
   './ular.html',
+  './animasi-sepeda.html',
+  './animasi-sepeda-svg.html',
+  './bike-animation.css',
   './manifest.json'
 ];
 
